@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <Navbar />
-        <main className="pt-24">
+        <main className="pt-24 w-full min-h-screen">
           <AOSWrapper>{children}</AOSWrapper>
         </main>
       </body>
