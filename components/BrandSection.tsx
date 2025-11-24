@@ -34,7 +34,6 @@ export default function BrandSection() {
         className="border-4 rounded-lg w-[90%] max-w-5xl py-10 px-6 flex flex-col items-center"
         data-aos="fade-up"
       >
-        {/* Heading */}
         <h2
           className="text-3xl font-black text-center leading-tight"
           data-aos="fade-up"
@@ -42,7 +41,6 @@ export default function BrandSection() {
           LOREM IPSUM DOLOR SIT AMET <br /> CONSECTETUR. COMMODO LEO AMET.
         </h2>
 
-        {/* Grid */}
         <div className="mt-10 grid grid-cols-4 gap-y-10 gap-x-8 place-items-center w-full">
           {logos.map((logo, i) => (
             <div

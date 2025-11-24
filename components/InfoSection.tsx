@@ -37,15 +37,12 @@ export default function InfoSection() {
     },
   ];
 
-  // Ref for heading animation
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: false, amount: 0.2 });
 
   return (
     <section className="w-full py-20 bg-white" ref={sectionRef}>
       <div className="max-w-6xl mx-auto px-4">
-
-        {/* TOP TEXT + HEADING ANIMATION */}
         <motion.p
           className="text-blue-600 font-medium text-sm mb-2"
           initial={{ opacity: 0, y: 20 }}
@@ -76,7 +73,6 @@ export default function InfoSection() {
           lectus.
         </motion.p>
 
-        {/* CARDS GRID */}
         <div className="grid md:grid-cols-2 gap-8">
           {cards.map((card, i) => (
             <motion.div
@@ -128,7 +124,6 @@ export default function InfoSection() {
             </motion.div>
           ))}
         </div>
-
       </div>
     </section>
   );

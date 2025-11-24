@@ -1,34 +1,31 @@
-// Fully fixed navbar with 0 errors (JS version, no TypeScript required)
+"use client";
 
-'use client'
-
-import Link from 'next/link'
-import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import Link from "next/link";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false)
-  const [hoverMenu, setHoverMenu] = useState(null) // works in JS
+  const [open, setOpen] = useState(false);
+  const [hoverMenu, setHoverMenu] = useState(null);
 
   const navItems = [
     {
-      name: 'About',
-      submenu: ['Team', 'Company', 'Careers'],
+      name: "About",
+      submenu: ["Team", "Company", "Careers"],
     },
     {
-      name: 'Services',
-      submenu: ['Web Development', 'UI/UX Design', 'Brand Strategy'],
+      name: "Services",
+      submenu: ["Web Development", "UI/UX Design", "Brand Strategy"],
     },
     {
-      name: 'Pricing',
-      submenu: ['Basic Plan', 'Pro Plan', 'Enterprise'],
+      name: "Pricing",
+      submenu: ["Basic Plan", "Pro Plan", "Enterprise"],
     },
-  ]
+  ];
 
   return (
     <nav className="w-full fixed top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-white/40 shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
-        {/* LOGO */}
         <Link href="/" className="flex items-center gap-3">
           <motion.div
             initial={{ opacity: 0, y: -8 }}
@@ -40,31 +37,30 @@ export default function Navbar() {
           </motion.div>
         </Link>
 
-        {/* DESKTOP MENU */}
         <div className="hidden md:flex items-center gap-10 text-sm text-[#222] font-medium">
-          {navItems.map((item, index:any) => (
+          {navItems.map((item, index: any) => (
             <div
               key={index}
               className="relative"
               onMouseEnter={() => setHoverMenu(index)}
               onMouseLeave={() => setHoverMenu(null)}
             >
-              {/* Main link */}
               <button className="relative group">
-                <motion.div whileHover={{ opacity: 0.7 }} transition={{ duration: 0.2 }}>
+                <motion.div
+                  whileHover={{ opacity: 0.7 }}
+                  transition={{ duration: 0.2 }}
+                >
                   {item.name}
                 </motion.div>
 
-                {/* underline */}
                 <motion.div
                   className="absolute bottom-[-4px] left-0 h-[2px] bg-primary rounded-full"
                   initial={{ width: 0 }}
-                  animate={{ width: hoverMenu === index ? '100%' : 0 }}
+                  animate={{ width: hoverMenu === index ? "100%" : 0 }}
                   transition={{ duration: 0.25 }}
                 />
               </button>
 
-              {/* Submenu */}
               <AnimatePresence>
                 {hoverMenu === index && (
                   <motion.div
@@ -78,12 +74,18 @@ export default function Navbar() {
                       className="space-y-4 text-xs"
                       initial="hidden"
                       animate="show"
-                      variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }}
+                      variants={{
+                        hidden: {},
+                        show: { transition: { staggerChildren: 0.1 } },
+                      }}
                     >
                       {item.submenu.map((sub, i) => (
                         <motion.li
                           key={i}
-                          variants={{ hidden: { opacity: 0, x: -12 }, show: { opacity: 1, x: 0 } }}
+                          variants={{
+                            hidden: { opacity: 0, x: -12 },
+                            show: { opacity: 1, x: 0 },
+                          }}
                         >
                           <motion.a
                             href="#"
@@ -91,11 +93,10 @@ export default function Navbar() {
                             whileHover={{ x: 6 }}
                           >
                             → {sub}
-
                             <motion.div
                               className="absolute bottom-[-3px] left-0 h-[1.5px] bg-primary rounded-full"
                               initial={{ width: 0 }}
-                              whileHover={{ width: '100%' }}
+                              whileHover={{ width: "100%" }}
                               transition={{ duration: 0.25 }}
                             />
                           </motion.a>
@@ -109,7 +110,6 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* SIGN IN BUTTON */}
         <div className="hidden md:flex">
           <motion.button
             whileHover={{ scale: 0.97 }}
@@ -120,7 +120,6 @@ export default function Navbar() {
           </motion.button>
         </div>
 
-        {/* MOBILE MENU BUTTON */}
         <button onClick={() => setOpen(!open)} className="md:hidden">
           <motion.svg
             width="28"
@@ -130,25 +129,34 @@ export default function Navbar() {
             animate={{ rotate: open ? 90 : 0 }}
             transition={{ duration: 0.2 }}
           >
-            <path d="M3 6h18M3 12h18M3 18h18" stroke="#222" strokeWidth="1.7" strokeLinecap="round" />
+            <path
+              d="M3 6h18M3 12h18M3 18h18"
+              stroke="#222"
+              strokeWidth="1.7"
+              strokeLinecap="round"
+            />
           </motion.svg>
         </button>
       </div>
 
-      {/* MOBILE MENU */}
       <AnimatePresence>
         {open && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
+            animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25 }}
             className="md:hidden bg-white border-t shadow-lg rounded-b-2xl"
           >
             <div className="px-6 py-6 space-y-6">
               {navItems.map((item, i) => (
-                <details key={i} className="bg-gray-50 p-4 rounded-xl border shadow-sm text-sm">
-                  <summary className="cursor-pointer font-medium">{item.name}</summary>
+                <details
+                  key={i}
+                  className="bg-gray-50 p-4 rounded-xl border shadow-sm text-sm"
+                >
+                  <summary className="cursor-pointer font-medium">
+                    {item.name}
+                  </summary>
                   <div className="ml-3 mt-3 space-y-3 text-xs">
                     {item.submenu.map((sub, j) => (
                       <a key={j} href="#" className="relative block">
@@ -168,5 +176,5 @@ export default function Navbar() {
         )}
       </AnimatePresence>
     </nav>
-  )
+  );
 }

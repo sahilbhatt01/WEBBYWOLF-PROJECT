@@ -6,13 +6,11 @@ export default function HeroPhone() {
   return (
     <section className="w-full bg-gray-100">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-
-        {/* LEFT CONTENT */}
         <motion.div
           className="py-20"
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.3 }}  // works on scroll up & down
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <p className="text-sm text-blue-600 font-medium">Lorem Ipsum</p>
@@ -34,12 +32,11 @@ export default function HeroPhone() {
             viewport={{ once: false }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            Lorem ipsum dolor sit amet consectetur. Vulputate amet aliquet
-            morbi suspendisse convallis. Urna a urna lectus donec felis risus
-            duis pellentesque. Pellentesque ultricies ipsum.
+            Lorem ipsum dolor sit amet consectetur. Vulputate amet aliquet morbi
+            suspendisse convallis. Urna a urna lectus donec felis risus duis
+            pellentesque. Pellentesque ultricies ipsum.
           </motion.p>
 
-          {/* Buttons */}
           <motion.div
             className="flex gap-4 mt-6"
             initial={{ opacity: 0, y: 40 }}
@@ -47,12 +44,19 @@ export default function HeroPhone() {
             viewport={{ once: false }}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
-            <img src="/logos/google-play.png" alt="Google Play Button" className="h-12 cursor-pointer" />
-            <img src="/logos/app-store.png" alt="App Store Button" className="h-12 cursor-pointer" />
+            <img
+              src="/logos/google-play.png"
+              alt="Google Play Button"
+              className="h-12 cursor-pointer"
+            />
+            <img
+              src="/logos/app-store.png"
+              alt="App Store Button"
+              className="h-12 cursor-pointer"
+            />
           </motion.div>
         </motion.div>
 
-        {/* RIGHT IMAGE */}
         <motion.div
           className="flex justify-center"
           initial={{ opacity: 0, scale: 0.8, y: 40 }}

@@ -28,25 +28,30 @@ export default function MotorSection() {
   return (
     <section className="w-full bg-white py-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-6">
-        
-        {/* LEFT TEXT */}
         <motion.div
           variants={textContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}  // 👈 REPEAT ANIMATION
+          viewport={{ once: false, amount: 0.3 }}
           className="flex flex-col justify-center space-y-6"
         >
-          <motion.span className="text-xs tracking-widest text-gray-500 font-semibold" variants={textItem}>
+          <motion.span
+            className="text-xs tracking-widest text-gray-500 font-semibold"
+            variants={textItem}
+          >
             NO LIMITS
           </motion.span>
 
-          <motion.h2 className="text-4xl font-bold text-gray-900 leading-tight" variants={textItem}>
+          <motion.h2
+            className="text-4xl font-bold text-gray-900 leading-tight"
+            variants={textItem}
+          >
             LOREM IPSUM DOLOR SIT AMET
           </motion.h2>
 
           <motion.p className="text-gray-600 max-w-md" variants={textItem}>
-            Lorem ipsum dolor sit amet consectetur. Nisl faucibus vitae porttitor pharetra tempor quis arcu. Ipsum nullam.
+            Lorem ipsum dolor sit amet consectetur. Nisl faucibus vitae
+            porttitor pharetra tempor quis arcu. Ipsum nullam.
           </motion.p>
 
           <motion.button
@@ -58,7 +63,6 @@ export default function MotorSection() {
           </motion.button>
         </motion.div>
 
-        {/* RIGHT IMAGES */}
         <div className="grid grid-cols-4 gap-4">
           {images.map((num, i) => {
             let classes = "";
@@ -75,7 +79,7 @@ export default function MotorSection() {
                 variants={imageVariant}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.25 }}  // 👈 REPEAT ANIMATION
+                viewport={{ once: false, amount: 0.25 }}
                 whileHover={{ scale: 1.04, rotate: 0.5 }}
                 transition={{ duration: 0.4 }}
               >
@@ -89,7 +93,6 @@ export default function MotorSection() {
             );
           })}
         </div>
-
       </div>
     </section>
   );

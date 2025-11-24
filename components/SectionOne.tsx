@@ -28,7 +28,6 @@ export default function SectionOne() {
           className="bg-white rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] 
                      p-6 md:p-10 border border-gray-100 relative overflow-hidden"
         >
-          {/* Top Label */}
           <motion.p
             variants={fadeLeft}
             className="text-sm text-[#0546D2] font-semibold mb-4"
@@ -37,7 +36,6 @@ export default function SectionOne() {
           </motion.p>
 
           <div className="grid md:grid-cols-2 gap-10 items-start">
-            {/* LEFT TEXT COLUMN */}
             <motion.div variants={fadeLeft}>
               <h2
                 className="text-[#222] text-[34px] md:text-[42px] font-bold leading-tight"
@@ -54,7 +52,6 @@ export default function SectionOne() {
               </p>
 
               <div className="mt-8 space-y-6">
-                {/* LIST ITEM 1 */}
                 <motion.div
                   variants={fadeLeft}
                   className="flex gap-4 items-start group"
@@ -75,7 +72,6 @@ export default function SectionOne() {
                   </p>
                 </motion.div>
 
-                {/* LIST ITEM 2 */}
                 <motion.div
                   variants={fadeLeft}
                   className="flex gap-4 items-start group"
@@ -96,7 +92,6 @@ export default function SectionOne() {
                   </p>
                 </motion.div>
 
-                {/* LIST ITEM 3 */}
                 <motion.div
                   variants={fadeLeft}
                   className="flex gap-4 items-start group"
@@ -119,7 +114,6 @@ export default function SectionOne() {
                 </motion.div>
               </div>
 
-              {/* BUTTON + PHONE */}
               <motion.div
                 variants={fadeLeft}
                 className="mt-10 flex flex-wrap items-center gap-6"
@@ -137,12 +131,10 @@ export default function SectionOne() {
               </motion.div>
             </motion.div>
 
-            {/* RIGHT SIDE IMAGE */}
             <motion.div
               variants={fadeRight}
               className="relative w-full h-[300px] md:h-[500px]"
             >
-              {/* TOP CURVE BAR */}
               <div
                 className="absolute top-0 left-1/2 -translate-x-1/2 z-10 
                               w-24 h-6 bg-white rounded-b-full"
@@ -159,7 +151,6 @@ export default function SectionOne() {
             </motion.div>
           </div>
 
-          {/* Bottom Gradient Line */}
           <div
             className="absolute bottom-0 left-0 w-full h-[6px] bg-gradient-to-r
                           from-[#0546D2] via-[#02C366] to-[#8200FF]"
