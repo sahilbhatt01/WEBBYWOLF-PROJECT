@@ -36,7 +36,7 @@ export default function Hero() {
 
   return (
     <section className="pb-20 bg-white overflow-x-hidden">
-      <div className="w-full px-4 md:pl-[5rem] grid grid-cols-1 md:grid-cols-2 items-center">
+      <div className="w-full px-4 md:pl-[8rem] grid grid-cols-1 md:grid-cols-2 items-center">
         <motion.div
           initial="hidden"
           whileInView="show"

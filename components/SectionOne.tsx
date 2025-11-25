@@ -16,7 +16,7 @@ export default function SectionOne() {
 
   return (
     <section className="py-20 bg-[#F5F8FF] overflow-hidden">
-      <div className="max-w-8xl mx-auto px-4 md:px-6">
+      <div className="max-w-[90%] mx-auto px-4 md:px-6">
         <motion.div
           initial="hidden"
           whileInView="show"

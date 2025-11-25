@@ -47,7 +47,7 @@ export default function SectionTwo() {
           <motion.ul variants={fadeLeft} className="mt-6 space-y-6">
             <li className="flex gap-3 items-start">
               <Image
-                src="/icon/icon.png"
+                src="/icons/icon.png"
                 width={28}
                 height={28}
                 alt=""
@@ -68,7 +68,7 @@ export default function SectionTwo() {
 
             <li className="flex gap-3 items-start">
               <Image
-                src="/icon/icon.png"
+                src="/icons/icon.png"
                 width={28}
                 height={28}
                 alt=""
@@ -89,7 +89,7 @@ export default function SectionTwo() {
 
             <li className="flex gap-3 items-start">
               <Image
-                src="/icon/icon.png"
+                src="/icons/icon.png"
                 width={28}
                 height={28}
                 alt=""

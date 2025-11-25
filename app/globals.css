@@ -2,6 +2,9 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "aos/dist/aos.css";
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
 
 :root {
   --primary: #1959ac;
@@ -219,3 +222,20 @@ a {
     transform: scale(1.1);
   }
 }
+
+.swiper-pagination-bullet {
+  width: 10px !important; ;
+  height: 10px !important;;
+  background: #bdbdbd !important;;
+  border-radius: 50% !important;;
+  opacity: 1 !important;;
+  transition: all 0.3s ease !important;;
+}
+
+.swiper-pagination-bullet-active {
+  width: 25px !important;;
+  height: 10px !important;;
+  border-radius: 20% !important;;
+  background: #004c97 !important;;
+}
+
