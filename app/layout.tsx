@@ -1,6 +1,5 @@
 import "./globals.css";
 import Navbar from "@/components/section/Navbar";
-import AOSWrapper from "@/components/AOSWrapper";
 import Footer from "@/components/section/Footer";
 export const metadata = {
   title: "WebbyWolf Assignment",
@@ -19,7 +18,7 @@ export default function RootLayout({
           <Navbar />
         </div>
         <main className="w-full min-h-screen px-4 sm:px-6 md:px-0">
-          <AOSWrapper>{children}</AOSWrapper>
+          {children}
         </main>
         <Footer />
       </body>

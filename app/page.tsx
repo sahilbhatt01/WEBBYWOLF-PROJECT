@@ -16,13 +16,7 @@ import InfoSection2 from "@/components/section/InfoSection2";
 import LoremSection from "@/components/section/LoremSection";
 import FaqSection from "@/components/section/FaqSection";
 import DolorSection from "@/components/section/DolorSection";
-
-const BrandSection = dynamic(
-  () => import("@/components/section/BrandSection"),
-  {
-    ssr: false,
-  }
-);
+import BrandSection from "@/components/section/BrandSection";
 
 export default function Page() {
   return (

@@ -1,18 +1,8 @@
 "use client";
 
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 
 export default function BrandSection() {
-  useEffect(() => {
-    AOS.init({
-      duration: 700,
-      easing: "ease-out",
-      once: false,
-    });
-  }, []);
-
   const logos = [
     { src: "/logos/hero.png", alt: "Hero", width: "w-20" },
     { src: "/logos/honda.png", alt: "Honda", width: "w-24" },
@@ -24,40 +14,63 @@ export default function BrandSection() {
     { src: "/logos/ather.png", alt: "Ather", width: "w-20" },
     { src: "/logos/ola.png", alt: "Ola Electric", width: "w-38" },
     { src: "/logos/revolt.png", alt: "Revolt", width: "w-28" },
-    { src: "/logos/ultraviolette.png", alt: "Ultraviolette", width: "w-45" },
+    { src: "/logos/ultraviolette.png", alt: "Ultraviolette", width: "w-50" },
     { src: "/logos/tork.png", alt: "Tork Motors", width: "w-35" },
   ];
 
+  // Animation Variants
+  const fadeUp = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
+  const containerStagger = {
+    show: {
+      transition: {
+        staggerChildren: 0.08,
+      },
+    },
+  };
+
   return (
     <section className="flex justify-center py-12">
-      <div
-        className=" rounded-lg w-[90%] max-w-5xl py-10 px-6 flex flex-col items-center"
-        data-aos="fade-up"
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.2 }}
+        variants={fadeUp}
+        className="rounded-lg w-[90%] max-w-5xl py-10 px-6 flex flex-col items-center"
       >
-        <h2
+        <motion.h2
+          variants={fadeUp}
           className="text-3xl font-black text-center leading-tight"
-          data-aos="fade-up"
         >
           LOREM IPSUM DOLOR SIT AMET <br /> CONSECTETUR. COMMODO LEO AMET.
-        </h2>
+        </motion.h2>
 
-        <div className="mt-10 grid grid-cols-4 gap-y-10 gap-x-8 place-items-center w-full">
+        {/* Logos */}
+        <motion.div
+          variants={containerStagger}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.3 }}
+          className="mt-20 grid grid-cols-4 gap-y-10 gap-x-8 place-items-center w-full"
+        >
           {logos.map((logo, i) => (
-            <div
+            <motion.div
               key={i}
+              variants={fadeUp}
               className="flex justify-center"
-              data-aos="fade-up"
-              data-aos-delay={i * 80}
             >
               <img
                 src={logo.src}
                 alt={logo.alt}
-                className={`${logo.width} h-auto object-contain opacity-90 hover:opacity-100 transition-all duration-300`}
+                className={`${logo.width} object-contain opacity-90 hover:opacity-100 transition-all duration-300`}
               />
-            </div>
+            </motion.div>
           ))}
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
