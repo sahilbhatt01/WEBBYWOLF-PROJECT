@@ -77,7 +77,7 @@ export default function InfoSection() {
           {cards.map((card, i) => (
             <motion.div
               key={i}
-              className="border rounded-xl overflow-hidden shadow-sm bg-white"
+              className="rounded-xl overflow-hidden shadow-sm bg-white"
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.2 }}

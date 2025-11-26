@@ -31,23 +31,23 @@ export default function MotorSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
-          className="absolute top-[25%] left-[5%] transform -translate-y-1/2 space-y-6 z-10 h-[250px]"
+          className="absolute top-[25%] left-[5%] transform -translate-y-1/2 space-y-6 z-10 h-[315px] w-[460px]"
         >
           <motion.span
-            className="text-xl tracking-widest text-gray-500 font-semibold"
+            className="text-[20px] tracking-[8%] text-blue-gray-600 font-semibold font-inter"
             variants={textItem}
           >
             NO LIMITS
           </motion.span>
 
           <motion.h2
-            className="text-4xl mt-4 font-bold text-gray-900 leading-tight"
+            className="text-[42px] font-bold text-blue-gray-900 tracking-[2%] font-roboto"
             variants={textItem}
           >
             LOREM IPSUM DOLOR SIT AMET
           </motion.h2>
 
-          <motion.p className="mt-4 text-gray-600 max-w-md" variants={textItem}>
+          <motion.p className="text-black text-[18px] leading-[25px] font-inter max-w-md" variants={textItem}>
             Lorem ipsum dolor sit amet consectetur. Nisl faucibus vitae porttitor
             pharetra tempor quis arcu. Ipsum nullam.
           </motion.p>
@@ -55,9 +55,9 @@ export default function MotorSection() {
           <motion.button
             variants={textItem}
             whileHover={{ scale: 1.05 }}
-            className="bg-blue-600 mt-4 text-white px-5 py-3 rounded-md w-fit"
+            className="bg-primary mt-4 text-white px-5 py-3 rounded-md w-fit flex gap-[10px]"
           >
-            Lorem Ipsum →
+            Lorem Ipsum <img src="/icons/Arrow 1.svg" alt="arrow-right" className="w-[16px]"/>
           </motion.button>
         </motion.div>
 
@@ -67,7 +67,7 @@ export default function MotorSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
-          className="relative w-full h-96 lg:h-[750px]" 
+          className="w-full h-96 lg:h-[750px]" 
         >
           <Image
             src="/images/Section6-Images.png"

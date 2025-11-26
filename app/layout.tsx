@@ -1,5 +1,5 @@
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/section/Navbar";
 import AOSWrapper from "@/components/AOSWrapper";
 
 export const metadata = {
@@ -14,9 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="max-w-screen overflow-x-hidden">
         <Navbar />
-        <main className="pt-24 w-full min-h-screen">
+        <main className="w-full min-h-screen">
           <AOSWrapper>{children}</AOSWrapper>
         </main>
       </body>

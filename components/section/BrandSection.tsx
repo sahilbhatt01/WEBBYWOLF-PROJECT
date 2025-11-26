@@ -18,20 +18,20 @@ export default function BrandSection() {
     { src: "/logos/honda.png", alt: "Honda", width: "w-24" },
     { src: "/logos/bajaj.png", alt: "Bajaj", width: "w-25" },
     { src: "/logos/tvs.png", alt: "TVS", width: "w-30" },
-    { src: "/logos/royal-enfield.png", alt: "Royal Enfield", width: "w-28" },
+    { src: "/logos/royal-enfield.png", alt: "Royal Enfield", width: "w-30" },
     { src: "/logos/yamaha.png", alt: "Yamaha", width: "w-24" },
     { src: "/logos/ktm.png", alt: "KTM", width: "w-20" },
     { src: "/logos/ather.png", alt: "Ather", width: "w-20" },
-    { src: "/logos/ola.png", alt: "Ola Electric", width: "w-35" },
+    { src: "/logos/ola.png", alt: "Ola Electric", width: "w-38" },
     { src: "/logos/revolt.png", alt: "Revolt", width: "w-28" },
-    { src: "/logos/ultraviolette.png", alt: "Ultraviolette", width: "w-40" },
-    { src: "/logos/tork.png", alt: "Tork Motors", width: "w-30" },
+    { src: "/logos/ultraviolette.png", alt: "Ultraviolette", width: "w-45" },
+    { src: "/logos/tork.png", alt: "Tork Motors", width: "w-35" },
   ];
 
   return (
     <section className="flex justify-center py-12">
       <div
-        className="border-4 rounded-lg w-[90%] max-w-5xl py-10 px-6 flex flex-col items-center"
+        className=" rounded-lg w-[90%] max-w-5xl py-10 px-6 flex flex-col items-center"
         data-aos="fade-up"
       >
         <h2
