@@ -36,7 +36,7 @@ export default function MotorCyclists() {
   };
 
   return (
-    <section className="relative flex h-[691px] justify-start my-40">
+    <section className="relative flex h-[691px] justify-start my-40 hidden md:block">
       <motion.div
         ref={ref}
         initial="hidden"

@@ -34,7 +34,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="mb-10 h-[913px] bg-white w-full flex">
+    <section className="mb-10 h-auto md:h-[913px] bg-white w-full flex flex-col-reverse md:flex-row">
       <motion.div
         initial="hidden"
         whileInView="show"
@@ -43,18 +43,18 @@ export default function Hero() {
           hidden: {},
           show: { transition: { staggerChildren: 0.18 } },
         }}
-        className="w-[40%] flex flex-col gap-6 justify-center pl-[7rem]"
+        className="w-full md:w-[40%] flex flex-col gap-6 justify-center px-6 md:pl-[7rem] pt-10 md:pt-0"
       >
         <motion.h1
           variants={fadeLeft}
-          className="text-4xl md:text-[64px] leading-[70px] font-roboto font-bold text-[#222]"
+          className="text-3xl md:text-[64px] leading-[38px] md:leading-[70px] font-roboto font-bold text-[#222]"
         >
           Lorem ipsum dolor sit amet
         </motion.h1>
 
         <motion.p
           variants={fadeLeft}
-          className="text-black text-inter text-[18px] leading-[25px]"
+          className="text-black text-inter text-[16px] md:text-[18px] leading-[22px] md:leading-[25px]"
         >
           Lorem ipsum dolor sit amet consectetur. Enim netus cras congue quis
           elit sociis. Sed mi rhoncus id habitant. In urna tellus nisi platea
@@ -62,10 +62,11 @@ export default function Hero() {
           eget viverra. Nunc euismod ultrices etiam nulla habitasse.
         </motion.p>
 
+        {/* FORM */}
         <motion.div variants={fadeLeft}>
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="flex gap-[8px] max-w-[459.31px] h-[47px] mt-8"
+            className="flex flex-col md:flex-row gap-3 max-w-[459px] h-auto md:h-[47px] mt-6"
           >
             <input
               {...register("email")}
@@ -76,7 +77,7 @@ export default function Hero() {
               whileHover={{ scale: 1.06 }}
               whileTap={{ scale: 0.96 }}
               type="submit"
-              className="flex items-center px-4 gap-2 rounded-[5px] bg-primary text-white text-[15px] font-bold text-inter w-[127px] h-[47px]"
+              className="flex items-center px-4 gap-2 rounded-[5px] bg-primary text-white text-[15px] font-bold text-inter w-full md:w-[127px] h-[47px]"
             >
               Submit
               <img
@@ -86,12 +87,16 @@ export default function Hero() {
               />
             </motion.button>
           </form>
+
           {errors.email && (
             <p className="text-sm text-red-500 mt-2">{errors.email.message}</p>
           )}
         </motion.div>
 
-        <motion.div variants={fadeLeft} className="flex items-center gap-2">
+        <motion.div
+          variants={fadeLeft}
+          className="flex items-center gap-2 mt-2"
+        >
           <img
             src="/icons/check-icon.svg"
             alt="check-icon"
@@ -103,7 +108,7 @@ export default function Hero() {
         </motion.div>
       </motion.div>
 
-      <div className="w-[60%]">
+      <div className="w-full md:w-[60%] mt-10 md:mt-0">
         <motion.div
           initial="hidden"
           whileInView="show"
@@ -114,7 +119,7 @@ export default function Hero() {
           <img
             src="/images/hero-bike.png"
             alt="motorcycle"
-            className="h-full"
+            className="w-full md:w-auto h-auto md:h-full object-contain"
           />
         </motion.div>
       </div>

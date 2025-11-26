@@ -2,7 +2,6 @@
 import Hero from "@/components/section/Hero";
 import SectionOne from "@/components/section/SectionOne";
 import SectionTwo from "@/components/section/SectionTwo";
-import Footer from "@/components/section/Footer";
 import HeroBg from "@/components/section/HeroBg";
 import dynamic from "next/dynamic";
 import InfoSection from "@/components/section/InfoSection";
@@ -29,7 +28,6 @@ export default function Page() {
   return (
     <>
       <Hero />
-
       <div className="bg-[url('/images/bg-graphic-1.png')] bg-no-repeat bg-cover bg-[center_-60%] py-10 flex flex-col w-full gap-[100px]">
         <SectionOne />
         <SectionTwo />
@@ -52,7 +50,6 @@ export default function Page() {
       <LoremSection />
       <FaqSection />
       <DolorSection />
-      <Footer />
     </>
   );
 }
