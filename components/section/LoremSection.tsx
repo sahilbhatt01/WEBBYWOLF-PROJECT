@@ -158,7 +158,7 @@ export default function LoremSection() {
         </Swiper>
 
         <div
-          className="mt-6 flex justify-center gap-[4px]"
+          className="py-[20px] flex justify-center gap-[4px]"
           ref={paginationRef}
         ></div>
       </div>

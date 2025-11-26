@@ -29,16 +29,23 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <SectionOne />
-      <SectionTwo />
+
+      <div className="bg-[url('/images/bg-graphic-1.png')] bg-no-repeat bg-cover bg-[center_-60%] py-10 flex flex-col w-full gap-[100px]">
+        <SectionOne />
+        <SectionTwo />
+      </div>
       <HeroBg />
       <BrandSection />
-      <InfoSection />
+      <div className="bg-[url('/images/bg-graphic-2.png')] bg-no-repeat bg-cover bg-center py-10 flex flex-col w-full gap-[100px]">
+        <InfoSection />
+      </div>
       <HeroBg1 />
       <QuoteForm />
       <HeroPhone />
-      <MotorSection />
-      <MotorCyclists />
+      <div className="bg-[url('/images/bg-graphic-3.png')] bg-no-repeat bg-cover bg-center py-10 flex flex-col w-full gap-[100px]">
+        <MotorSection />
+        <MotorCyclists />
+      </div>
       <TestimonialSection />
       <CheckToolSection />
       <InfoSection2 />

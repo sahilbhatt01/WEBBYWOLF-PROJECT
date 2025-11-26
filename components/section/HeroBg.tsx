@@ -17,7 +17,7 @@ export default function HeroBg() {
   return (
     <section
       id="hero-section"
-      className="relative w-full h-screen bg-cover bg-center flex items-center justify-center overflow-hidden mt-15 mb-10"
+      className="relative w-full h-screen bg-cover bg-center flex items-center justify-center overflow-hidden mt-40 mb-10"
       style={{ backgroundImage: "url('/images/hero-bg.png')" }}
     >
       <div className="absolute inset-0 bg-black/60 animate-fadeIn"></div>

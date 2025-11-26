@@ -89,7 +89,7 @@ export default function TestimonialSection() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.2 }}
-      className="bg-blue-600 text-white py-20 px-6 pt-20 md:px-20 my-20"
+      className="bg-blue-600 text-white py-20 px-6 pt-20 md:px-20"
     >
       <div className="max-w-7xl mx-auto">
         <p className="text-sm opacity-80">Join other Sun harvesters</p>

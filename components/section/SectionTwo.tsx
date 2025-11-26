@@ -13,13 +13,13 @@ export default function SectionTwo() {
   };
 
   return (
-    <section className=" w-full h-[936px]">
+    <section className=" w-full h-[936px] bg-white">
       <motion.div
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.3 }}
         variants={{ show: { transition: { staggerChildren: 0.18 } } }}
-        className="h-[916px] flex justify-end"
+        className="h-[985px] flex justify-end"
       >
         <div className="w-[95%]  py-[45px] flex gap-8">
           <div className="w-full h-full">

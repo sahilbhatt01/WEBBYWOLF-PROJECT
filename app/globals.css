@@ -2,20 +2,18 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "aos/dist/aos.css";
-@import 'swiper/css';
-@import 'swiper/css/navigation';
-@import 'swiper/css/pagination';
-
-
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
 
 @theme {
   --color-primary: #1959ac;
   --color-blue-gray-600: #475569;
-  --color-blue-gray-900: #0F172A;
+  --color-blue-gray-900: #0f172a;
   --font-roboto: "Roboto", sans-serif;
   --font-inter: "Inter", sans-serif;
+  --background-graphic-1: url("/images/bg-graphic-1.png");
 }
-
 
 html,
 body,
@@ -38,7 +36,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
 
 .hero-bg {
   animation: bgZoom 15s ease-in-out infinite alternate;
@@ -105,18 +102,17 @@ a {
 }
 
 .swiper-pagination-bullet {
-  width: 10px !important; ;
-  height: 10px !important;;
-  background: #bdbdbd !important;;
-  border-radius: 50% !important;;
-  opacity: 1 !important;;
-  transition: all 0.3s ease !important;;
+  width: 10px !important;
+  height: 10px !important;
+  background: #bdbdbd !important;
+  border-radius: 50% !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease !important;
 }
 
 .swiper-pagination-bullet-active {
-  width: 25px !important;;
-  height: 10px !important;;
-  border-radius: 20% !important;;
-  background: #004c97 !important;;
+  width: 25px !important;
+  height: 11px !important;
+  border-radius: 20% !important;
+  background: #004c97 !important;
 }
-

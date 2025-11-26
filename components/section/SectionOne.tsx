@@ -15,7 +15,7 @@ export default function SectionOne() {
   };
 
   return (
-    <section className="py-20 pl-[7rem] overflow-hidden">
+    <section className="pl-[7rem] overflow-hidden">
       <motion.div
         initial="hidden"
         whileInView="show"

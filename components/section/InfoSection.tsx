@@ -41,7 +41,7 @@ export default function InfoSection() {
   const isInView = useInView(sectionRef, { once: false, amount: 0.2 });
 
   return (
-    <section className="w-full py-20 bg-white" ref={sectionRef}>
+    <section className="w-full py-20" ref={sectionRef}>
       <div className="max-w-6xl mx-auto px-4">
         <motion.p
           className="text-blue-600 font-medium text-sm mb-2"
