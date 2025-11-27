@@ -9,73 +9,73 @@ import { motion } from "framer-motion";
 export default function TestimonialSection() {
   const cards = [
     {
-      icon: "/icons/icon-1.svg",
+      icon: "/icons/icon-1.png",
       text: "Purus maecenas quis elit eu, aliquet. Tellus porttitor ut sollicitudin sit non fringilla. Quam nunc volutpat senectus neque eget amet pharetra.",
       name: "Jane Cooper",
       avatar: "/avatars/user1.png",
     },
     {
-      icon: "/icons/icon-2.svg",
+      icon: "/icons/icon-2.png",
       text: "Vehicula sit sit pharetra bibendum ut risus accumsan. Purus, in metus enim, ipsum morbi euismod pellentesque.",
       name: "Ralph Edwards",
       avatar: "/avatars/user2.png",
     },
     {
-      icon: "/icons/icon-3.svg",
+      icon: "/icons/icon-3.png",
       text: "Viverra lacus suspendisse elit, adipiscing orci. Viverra blandit sem neque pretium. Duis sem semper fermentum consequat.",
       name: "Courtney Henry",
       avatar: "/avatars/user3.png",
     },
     {
-      icon: "/icons/icon-4.svg",
+      icon: "/icons/icon-4.png",
       text: "Hendrerit augue ut nec quis integer risus. Maecenas ultrices lorem at massa pretium vulputate.",
       name: "Cameron Williamson",
       avatar: "/avatars/user4.png",
     },
     {
-      icon: "/icons/icon-1.svg",
+      icon: "/icons/icon-1.png",
       text: "Purus maecenas quis elit eu, aliquet. Tellus porttitor ut sollicitudin sit non fringilla. Quam nunc volutpat senectus neque eget amet pharetra.",
       name: "Jane Cooper",
       avatar: "/avatars/user1.png",
     },
     {
-      icon: "/icons/icon-2.svg",
+      icon: "/icons/icon-2.png",
       text: "Vehicula sit sit pharetra bibendum ut risus accumsan. Purus, in metus enim, ipsum morbi euismod pellentesque.",
       name: "Ralph Edwards",
       avatar: "/avatars/user2.png",
     },
     {
-      icon: "/icons/icon-3.svg",
+      icon: "/icons/icon-3.png",
       text: "Viverra lacus suspendisse elit, adipiscing orci. Viverra blandit sem neque pretium. Duis sem semper fermentum consequat.",
       name: "Courtney Henry",
       avatar: "/avatars/user3.png",
     },
     {
-      icon: "/icons/icon-4.svg",
+      icon: "/icons/icon-4.png",
       text: "Hendrerit augue ut nec quis integer risus. Maecenas ultrices lorem at massa pretium vulputate.",
       name: "Cameron Williamson",
       avatar: "/avatars/user4.png",
     },
     {
-      icon: "/icons/icon-1.svg",
+      icon: "/icons/icon-1.png",
       text: "Purus maecenas quis elit eu, aliquet. Tellus porttitor ut sollicitudin sit non fringilla. Quam nunc volutpat senectus neque eget amet pharetra.",
       name: "Jane Cooper",
       avatar: "/avatars/user1.png",
     },
     {
-      icon: "/icons/icon-2.svg",
+      icon: "/icons/icon-2.png",
       text: "Vehicula sit sit pharetra bibendum ut risus accumsan. Purus, in metus enim, ipsum morbi euismod pellentesque.",
       name: "Ralph Edwards",
       avatar: "/avatars/user2.png",
     },
     {
-      icon: "/icons/icon-3.svg",
+      icon: "/icons/icon-3.png",
       text: "Viverra lacus suspendisse elit, adipiscing orci. Viverra blandit sem neque pretium. Duis sem semper fermentum consequat.",
       name: "Courtney Henry",
       avatar: "/avatars/user3.png",
     },
     {
-      icon: "/icons/icon-4.svg",
+      icon: "/icons/icon-4.png",
       text: "Hendrerit augue ut nec quis integer risus. Maecenas ultrices lorem at massa pretium vulputate.",
       name: "Cameron Williamson",
       avatar: "/avatars/user4.png",
@@ -173,10 +173,10 @@ export default function TestimonialSection() {
                   <div className="flex items-center gap-3 mt-6">
                     <img
                       src={card.avatar}
-                      width={40}
-                      height={40}
+                      width={35}
+                      height={35}
                       alt="User avatar"
-                      className="rounded-full object-cover"
+                      className="rounded-full object-contain"
                     />
                     <span className="font-semibold text-sm">{card.name}</span>
                   </div>
