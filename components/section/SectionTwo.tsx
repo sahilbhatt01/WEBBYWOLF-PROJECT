@@ -58,7 +58,7 @@ export default function SectionTwo() {
               >
                 <motion.div variants={fadeRight} className="flex gap-[16px]">
                   <img
-                    src="/icons/icon.png"
+                    src="/icons/icon-0.png"
                     alt=""
                     className="w-[32px] md:w-[36px] h-[32px] md:h-[38.47px]"
                   />
@@ -84,7 +84,7 @@ export default function SectionTwo() {
 
                 <motion.div variants={fadeRight} className="flex gap-[16px]">
                   <img
-                    src="/icons/icon.png"
+                    src="/icons/icon-0.png"
                     alt=""
                     className="w-[32px] md:w-[36px] h-[32px] md:h-[38.47px]"
                   />
@@ -110,7 +110,7 @@ export default function SectionTwo() {
 
                 <motion.div variants={fadeRight} className="flex gap-[16px]">
                   <img
-                    src="/icons/icon.png"
+                    src="/icons/icon-0.png"
                     alt=""
                     className="w-[32px] md:w-[36px] h-[32px] md:h-[38.47px]"
                   />
