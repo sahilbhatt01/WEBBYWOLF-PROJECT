@@ -107,7 +107,7 @@ export default function SectionOne() {
             <img
               src="/images/section2.png"
               alt="bikes"
-              className="object-cover w-full md:w-auto max-w-[500px] md:max-w-[500px]"
+              className="object-cover w-full md:w-auto max-w-[500px] md:max-w-[600px]"
             />
           </motion.div>
         </div>

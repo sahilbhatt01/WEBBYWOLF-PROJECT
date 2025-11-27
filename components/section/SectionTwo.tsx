@@ -13,7 +13,7 @@ export default function SectionTwo() {
   };
 
   return (
-    <section className="w-full bg-white h-auto md:h-[936px]">
+    <section className="w-full bg-white h-auto md:h-[985px]">
       <motion.div
         initial="hidden"
         whileInView="show"
@@ -23,7 +23,7 @@ export default function SectionTwo() {
       >
         <div className="w-full py-[45px] flex flex-col md:flex-row gap-8 md:w-[95%] px-4 md:px-0">
           <div className="w-full h-full">
-            <div className="flex justify-start p-[25px] h-auto md:h-[342px]">
+            <div className="flex justify-start p-[25px] h-auto">
               <div className="max-w-full md:max-w-[70%] flex flex-col gap-[20px]">
                 <motion.p
                   variants={fadeLeft}
@@ -51,10 +51,10 @@ export default function SectionTwo() {
               </div>
             </div>
 
-            <div className="h-auto md:h-[484px] flex items-center">
+            <div className="h-auto md:h-[484px] flex items-center mt-6">
               <motion.div
                 variants={{ fadeLeft }}
-                className="w-full md:w-[70%] px-2 md:px-5 flex flex-col gap-[40px]"
+                className="w-full md:w-[70%] px-2 md:px-5 flex flex-col gap-[20px]"
               >
                 <motion.div variants={fadeRight} className="flex gap-[16px]">
                   <img
