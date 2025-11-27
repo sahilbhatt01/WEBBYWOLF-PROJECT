@@ -2,7 +2,6 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import { motion } from "framer-motion";
@@ -158,7 +157,7 @@ export default function TestimonialSection() {
                   className="bg-white text-black p-6 rounded-sm shadow-md h-full flex flex-col min-h-[350px]"
                 >
                   <div className="w-12 h-12">
-                    <Image
+                    <img
                       src={card.icon}
                       alt="icon"
                       width={48}
@@ -172,7 +171,7 @@ export default function TestimonialSection() {
                   </p>
 
                   <div className="flex items-center gap-3 mt-6">
-                    <Image
+                    <img
                       src={card.avatar}
                       width={40}
                       height={40}
